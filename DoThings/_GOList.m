@@ -3,6 +3,17 @@
 
 #import "_GOList.h"
 
+const struct GOListAttributes GOListAttributes = {
+	.title = @"title",
+};
+
+const struct GOListRelationships GOListRelationships = {
+	.tasks = @"tasks",
+};
+
+const struct GOListFetchedProperties GOListFetchedProperties = {
+};
+
 @implementation GOListID
 @end
 
@@ -48,7 +59,9 @@
 	
 - (NSMutableOrderedSet*)tasksSet {
 	[self willAccessValueForKey:@"tasks"];
-	NSMutableOrderedSet *result = (NSMutableOrderedSet*)[self mutableSetValueForKey:@"tasks"];
+  
+	NSMutableOrderedSet *result = (NSMutableOrderedSet*)[self mutableOrderedSetValueForKey:@"tasks"];
+  
 	[self didAccessValueForKey:@"tasks"];
 	return result;
 }

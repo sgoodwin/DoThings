@@ -4,6 +4,17 @@
 #import <CoreData/CoreData.h>
 
 
+extern const struct GOTaskAttributes {
+	 NSString *text;
+} GOTaskAttributes;
+
+extern const struct GOTaskRelationships {
+	 NSString *list;
+} GOTaskRelationships;
+
+extern const struct GOTaskFetchedProperties {
+} GOTaskFetchedProperties;
+
 @class GOList;
 
 

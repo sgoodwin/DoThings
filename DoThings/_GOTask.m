@@ -3,6 +3,17 @@
 
 #import "_GOTask.h"
 
+const struct GOTaskAttributes GOTaskAttributes = {
+	.text = @"text",
+};
+
+const struct GOTaskRelationships GOTaskRelationships = {
+	.list = @"list",
+};
+
+const struct GOTaskFetchedProperties GOTaskFetchedProperties = {
+};
+
 @implementation GOTaskID
 @end
 
