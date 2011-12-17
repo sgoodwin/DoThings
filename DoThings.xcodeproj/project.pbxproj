@@ -378,6 +378,11 @@
 				GCC_PREFIX_HEADER = "DoThings/DoThings-Prefix.pch";
 				INFOPLIST_FILE = "DoThings/DoThings-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-unused-parameter",
+				);
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,6 +394,11 @@
 				GCC_PREFIX_HEADER = "DoThings/DoThings-Prefix.pch";
 				INFOPLIST_FILE = "DoThings/DoThings-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-unused-parameter",
+				);
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -440,6 +450,7 @@
 				9BB282C6149C5D2000948BBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BB282C7149C5D2000948BBB /* Build configuration list for PBXNativeTarget "DoThingsTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +459,7 @@
 				9BB282C9149C5D2000948BBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
