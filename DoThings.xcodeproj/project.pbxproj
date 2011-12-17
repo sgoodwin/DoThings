@@ -22,6 +22,7 @@
 		9BBEF4E5149C6B4500471749 /* _GOTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4DD149C6B4500471749 /* _GOTask.m */; };
 		9BBEF4E6149C6B4500471749 /* GOList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4DE149C6B4500471749 /* GOList.m */; };
 		9BBEF4E7149C6B4500471749 /* GOTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4DF149C6B4500471749 /* GOTask.m */; };
+		9BBEF4EE149C6D9F00471749 /* GOCoreDataVendor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4ED149C6D9F00471749 /* GOCoreDataVendor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		9BBEF4E1149C6B4500471749 /* _GOTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GOTask.h; sourceTree = "<group>"; };
 		9BBEF4E2149C6B4500471749 /* GOList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOList.h; sourceTree = "<group>"; };
 		9BBEF4E3149C6B4500471749 /* GOTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOTask.h; sourceTree = "<group>"; };
+		9BBEF4EC149C6D9F00471749 /* GOCoreDataVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOCoreDataVendor.h; sourceTree = "<group>"; };
+		9BBEF4ED149C6D9F00471749 /* GOCoreDataVendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOCoreDataVendor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 		9BB28299149C5D2000948BBB /* DoThings */ = {
 			isa = PBXGroup;
 			children = (
+				9BBEF4EB149C6D7D00471749 /* CoreData */,
 				9BBEF4EA149C6B5800471749 /* Data Models */,
 				9BB282A5149C5D2000948BBB /* GOAppDelegate.h */,
 				9BB282A6149C5D2000948BBB /* GOAppDelegate.m */,
@@ -182,6 +186,15 @@
 				9BBEF4DF149C6B4500471749 /* GOTask.m */,
 			);
 			name = "Data Models";
+			sourceTree = "<group>";
+		};
+		9BBEF4EB149C6D7D00471749 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9BBEF4EC149C6D9F00471749 /* GOCoreDataVendor.h */,
+				9BBEF4ED149C6D9F00471749 /* GOCoreDataVendor.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +312,7 @@
 				9BBEF4E5149C6B4500471749 /* _GOTask.m in Sources */,
 				9BBEF4E6149C6B4500471749 /* GOList.m in Sources */,
 				9BBEF4E7149C6B4500471749 /* GOTask.m in Sources */,
+				9BBEF4EE149C6D9F00471749 /* GOCoreDataVendor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
