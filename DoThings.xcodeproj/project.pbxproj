@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BB28294149C5D2000948BBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB28293149C5D2000948BBB /* Cocoa.framework */; };
+		9BB2829E149C5D2000948BBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2829C149C5D2000948BBB /* InfoPlist.strings */; };
+		9BB282A0149C5D2000948BBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2829F149C5D2000948BBB /* main.m */; };
+		9BB282A4149C5D2000948BBB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9BB282A2149C5D2000948BBB /* Credits.rtf */; };
+		9BB282A7149C5D2000948BBB /* GOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB282A6149C5D2000948BBB /* GOAppDelegate.m */; };
+		9BB282AA149C5D2000948BBB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BB282A8149C5D2000948BBB /* MainMenu.xib */; };
+		9BB282AD149C5D2000948BBB /* DoThings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BB282AB149C5D2000948BBB /* DoThings.xcdatamodeld */; };
+		9BB282B5149C5D2000948BBB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB282B4149C5D2000948BBB /* SenTestingKit.framework */; };
+		9BB282B6149C5D2000948BBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB28293149C5D2000948BBB /* Cocoa.framework */; };
+		9BB282BE149C5D2000948BBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BB282BC149C5D2000948BBB /* InfoPlist.strings */; };
+		9BB282C1149C5D2000948BBB /* DoThingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB282C0149C5D2000948BBB /* DoThingsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BB282B7149C5D2000948BBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BB28286149C5D2000948BBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BB2828E149C5D2000948BBB;
+			remoteInfo = DoThings;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9BB2828F149C5D2000948BBB /* DoThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoThings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB28293149C5D2000948BBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9BB28296149C5D2000948BBB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9BB28297149C5D2000948BBB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9BB28298149C5D2000948BBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9BB2829B149C5D2000948BBB /* DoThings-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoThings-Info.plist"; sourceTree = "<group>"; };
+		9BB2829D149C5D2000948BBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9BB2829F149C5D2000948BBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9BB282A1149C5D2000948BBB /* DoThings-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DoThings-Prefix.pch"; sourceTree = "<group>"; };
+		9BB282A3149C5D2000948BBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9BB282A5149C5D2000948BBB /* GOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GOAppDelegate.h; sourceTree = "<group>"; };
+		9BB282A6149C5D2000948BBB /* GOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOAppDelegate.m; sourceTree = "<group>"; };
+		9BB282A9149C5D2000948BBB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9BB282AC149C5D2000948BBB /* DoThings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoThings.xcdatamodel; sourceTree = "<group>"; };
+		9BB282B3149C5D2000948BBB /* DoThingsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoThingsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB282B4149C5D2000948BBB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9BB282BB149C5D2000948BBB /* DoThingsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoThingsTests-Info.plist"; sourceTree = "<group>"; };
+		9BB282BD149C5D2000948BBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9BB282BF149C5D2000948BBB /* DoThingsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoThingsTests.h; sourceTree = "<group>"; };
+		9BB282C0149C5D2000948BBB /* DoThingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoThingsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BB2828C149C5D2000948BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB28294149C5D2000948BBB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB282AF149C5D2000948BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB282B5149C5D2000948BBB /* SenTestingKit.framework in Frameworks */,
+				9BB282B6149C5D2000948BBB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BB28284149C5D2000948BBB = {
+			isa = PBXGroup;
+			children = (
+				9BB28299149C5D2000948BBB /* DoThings */,
+				9BB282B9149C5D2000948BBB /* DoThingsTests */,
+				9BB28292149C5D2000948BBB /* Frameworks */,
+				9BB28290149C5D2000948BBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BB28290149C5D2000948BBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BB2828F149C5D2000948BBB /* DoThings.app */,
+				9BB282B3149C5D2000948BBB /* DoThingsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BB28292149C5D2000948BBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BB28293149C5D2000948BBB /* Cocoa.framework */,
+				9BB282B4149C5D2000948BBB /* SenTestingKit.framework */,
+				9BB28295149C5D2000948BBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BB28295149C5D2000948BBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BB28296149C5D2000948BBB /* AppKit.framework */,
+				9BB28297149C5D2000948BBB /* CoreData.framework */,
+				9BB28298149C5D2000948BBB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9BB28299149C5D2000948BBB /* DoThings */ = {
+			isa = PBXGroup;
+			children = (
+				9BB282A5149C5D2000948BBB /* GOAppDelegate.h */,
+				9BB282A6149C5D2000948BBB /* GOAppDelegate.m */,
+				9BB282A8149C5D2000948BBB /* MainMenu.xib */,
+				9BB282AB149C5D2000948BBB /* DoThings.xcdatamodeld */,
+				9BB2829A149C5D2000948BBB /* Supporting Files */,
+			);
+			path = DoThings;
+			sourceTree = "<group>";
+		};
+		9BB2829A149C5D2000948BBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BB2829B149C5D2000948BBB /* DoThings-Info.plist */,
+				9BB2829C149C5D2000948BBB /* InfoPlist.strings */,
+				9BB2829F149C5D2000948BBB /* main.m */,
+				9BB282A1149C5D2000948BBB /* DoThings-Prefix.pch */,
+				9BB282A2149C5D2000948BBB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BB282B9149C5D2000948BBB /* DoThingsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BB282BF149C5D2000948BBB /* DoThingsTests.h */,
+				9BB282C0149C5D2000948BBB /* DoThingsTests.m */,
+				9BB282BA149C5D2000948BBB /* Supporting Files */,
+			);
+			path = DoThingsTests;
+			sourceTree = "<group>";
+		};
+		9BB282BA149C5D2000948BBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BB282BB149C5D2000948BBB /* DoThingsTests-Info.plist */,
+				9BB282BC149C5D2000948BBB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BB2828E149C5D2000948BBB /* DoThings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BB282C4149C5D2000948BBB /* Build configuration list for PBXNativeTarget "DoThings" */;
+			buildPhases = (
+				9BB2828B149C5D2000948BBB /* Sources */,
+				9BB2828C149C5D2000948BBB /* Frameworks */,
+				9BB2828D149C5D2000948BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoThings;
+			productName = DoThings;
+			productReference = 9BB2828F149C5D2000948BBB /* DoThings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BB282B2149C5D2000948BBB /* DoThingsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BB282C7149C5D2000948BBB /* Build configuration list for PBXNativeTarget "DoThingsTests" */;
+			buildPhases = (
+				9BB282AE149C5D2000948BBB /* Sources */,
+				9BB282AF149C5D2000948BBB /* Frameworks */,
+				9BB282B0149C5D2000948BBB /* Resources */,
+				9BB282B1149C5D2000948BBB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BB282B8149C5D2000948BBB /* PBXTargetDependency */,
+			);
+			name = DoThingsTests;
+			productName = DoThingsTests;
+			productReference = 9BB282B3149C5D2000948BBB /* DoThingsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BB28286149C5D2000948BBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "SNAP Interactive";
+			};
+			buildConfigurationList = 9BB28289149C5D2000948BBB /* Build configuration list for PBXProject "DoThings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9BB28284149C5D2000948BBB;
+			productRefGroup = 9BB28290149C5D2000948BBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BB2828E149C5D2000948BBB /* DoThings */,
+				9BB282B2149C5D2000948BBB /* DoThingsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BB2828D149C5D2000948BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB2829E149C5D2000948BBB /* InfoPlist.strings in Resources */,
+				9BB282A4149C5D2000948BBB /* Credits.rtf in Resources */,
+				9BB282AA149C5D2000948BBB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB282B0149C5D2000948BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB282BE149C5D2000948BBB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BB282B1149C5D2000948BBB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BB2828B149C5D2000948BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB282A0149C5D2000948BBB /* main.m in Sources */,
+				9BB282A7149C5D2000948BBB /* GOAppDelegate.m in Sources */,
+				9BB282AD149C5D2000948BBB /* DoThings.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB282AE149C5D2000948BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB282C1149C5D2000948BBB /* DoThingsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BB282B8149C5D2000948BBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BB2828E149C5D2000948BBB /* DoThings */;
+			targetProxy = 9BB282B7149C5D2000948BBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BB2829C149C5D2000948BBB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BB2829D149C5D2000948BBB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9BB282A2149C5D2000948BBB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BB282A3149C5D2000948BBB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9BB282A8149C5D2000948BBB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BB282A9149C5D2000948BBB /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		9BB282BC149C5D2000948BBB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BB282BD149C5D2000948BBB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BB282C2149C5D2000948BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9BB282C3149C5D2000948BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9BB282C5149C5D2000948BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoThings/DoThings-Prefix.pch";
+				INFOPLIST_FILE = "DoThings/DoThings-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9BB282C6149C5D2000948BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoThings/DoThings-Prefix.pch";
+				INFOPLIST_FILE = "DoThings/DoThings-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9BB282C8149C5D2000948BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DoThings.app/Contents/MacOS/DoThings";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoThings/DoThings-Prefix.pch";
+				INFOPLIST_FILE = "DoThingsTests/DoThingsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9BB282C9149C5D2000948BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DoThings.app/Contents/MacOS/DoThings";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoThings/DoThings-Prefix.pch";
+				INFOPLIST_FILE = "DoThingsTests/DoThingsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BB28289149C5D2000948BBB /* Build configuration list for PBXProject "DoThings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB282C2149C5D2000948BBB /* Debug */,
+				9BB282C3149C5D2000948BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BB282C4149C5D2000948BBB /* Build configuration list for PBXNativeTarget "DoThings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB282C5149C5D2000948BBB /* Debug */,
+				9BB282C6149C5D2000948BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9BB282C7149C5D2000948BBB /* Build configuration list for PBXNativeTarget "DoThingsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB282C8149C5D2000948BBB /* Debug */,
+				9BB282C9149C5D2000948BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9BB282AB149C5D2000948BBB /* DoThings.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9BB282AC149C5D2000948BBB /* DoThings.xcdatamodel */,
+			);
+			currentVersion = 9BB282AC149C5D2000948BBB /* DoThings.xcdatamodel */;
+			path = DoThings.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9BB28286149C5D2000948BBB /* Project object */;
+}
