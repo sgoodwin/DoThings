@@ -5,11 +5,11 @@
 
 
 extern const struct GOListAttributes {
-	 NSString *title;
+	__unsafe_unretained NSString *title;
 } GOListAttributes;
 
 extern const struct GOListRelationships {
-	 NSString *tasks;
+	__unsafe_unretained NSString *tasks;
 } GOListRelationships;
 
 extern const struct GOListFetchedProperties {
@@ -31,7 +31,7 @@ extern const struct GOListFetchedProperties {
 
 
 
-@property (nonatomic, retain) NSString *title;
+@property (nonatomic, strong) NSString *title;
 
 
 //- (BOOL)validateTitle:(id*)value_ error:(NSError**)error_;
@@ -40,7 +40,7 @@ extern const struct GOListFetchedProperties {
 
 
 
-@property (nonatomic, retain) NSOrderedSet* tasks;
+@property (nonatomic, strong) NSOrderedSet* tasks;
 
 - (NSMutableOrderedSet*)tasksSet;
 

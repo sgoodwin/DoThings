@@ -5,11 +5,11 @@
 
 
 extern const struct GOTaskAttributes {
-	 NSString *text;
+	__unsafe_unretained NSString *text;
 } GOTaskAttributes;
 
 extern const struct GOTaskRelationships {
-	 NSString *list;
+	__unsafe_unretained NSString *list;
 } GOTaskRelationships;
 
 extern const struct GOTaskFetchedProperties {
@@ -31,7 +31,7 @@ extern const struct GOTaskFetchedProperties {
 
 
 
-@property (nonatomic, retain) NSString *text;
+@property (nonatomic, strong) NSString *text;
 
 
 //- (BOOL)validateText:(id*)value_ error:(NSError**)error_;
@@ -40,7 +40,7 @@ extern const struct GOTaskFetchedProperties {
 
 
 
-@property (nonatomic, retain) GOList* list;
+@property (nonatomic, strong) GOList* list;
 
 //- (BOOL)validateList:(id*)value_ error:(NSError**)error_;
 
