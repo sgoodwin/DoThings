@@ -8,13 +8,19 @@
 
 #import "GOAppDelegate.h"
 #import "GOCoreDataVendor.h"
+#import "GOListController.h"
 
 @implementation GOAppDelegate
 
-@synthesize window = _window;
+@synthesize window = __window;
+@synthesize listController = __listController;
+@synthesize splitView = __splitView;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification{
-    // Insert code here to initialize your application
+    self.listController = [GOListController controller];
+    NSView *leftView = [[self.splitView subviews] objectAtIndex:0];
+    [self.listController.view setFrame:leftView.bounds];
+    [leftView addSubview:self.listController.view];
 }
 
 /**

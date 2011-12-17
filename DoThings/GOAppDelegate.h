@@ -8,9 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class GOListController;
 @interface GOAppDelegate : NSObject <NSApplicationDelegate>
-
+@property (strong) GOListController *listController;
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSSplitView *splitView;
 
 - (IBAction)saveAction:(id)sender;
 
