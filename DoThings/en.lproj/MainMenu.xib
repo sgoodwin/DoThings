@@ -1294,7 +1294,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 390}, {480, 360}}</string>
+				<string key="NSWindowRect">{{335, 390}, {705, 372}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">DoThings</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -1304,30 +1304,30 @@
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<array class="NSMutableArray" key="NSSubviews">
-						<object class="NSSplitView" id="381102110">
+						<object class="NSSplitView" id="138760172">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">274</int>
+							<int key="NSvFlags">4370</int>
 							<array class="NSMutableArray" key="NSSubviews">
-								<object class="NSCustomView" id="890259818">
-									<reference key="NSNextResponder" ref="381102110"/>
+								<object class="NSCustomView" id="555315655">
+									<reference key="NSNextResponder" ref="138760172"/>
 									<int key="NSvFlags">256</int>
-									<string key="NSFrameSize">{246, 360}</string>
-									<reference key="NSSuperview" ref="381102110"/>
+									<string key="NSFrameSize">{182, 372}</string>
+									<reference key="NSSuperview" ref="138760172"/>
 									<reference key="NSWindow"/>
 									<string key="NSReuseIdentifierKey">_NS:1165</string>
 									<string key="NSClassName">NSView</string>
 								</object>
-								<object class="NSCustomView" id="532374065">
-									<reference key="NSNextResponder" ref="381102110"/>
+								<object class="NSCustomView" id="494946535">
+									<reference key="NSNextResponder" ref="138760172"/>
 									<int key="NSvFlags">256</int>
-									<string key="NSFrame">{{247, 0}, {233, 360}}</string>
-									<reference key="NSSuperview" ref="381102110"/>
+									<string key="NSFrame">{{183, 0}, {522, 372}}</string>
+									<reference key="NSSuperview" ref="138760172"/>
 									<reference key="NSWindow"/>
 									<string key="NSReuseIdentifierKey">_NS:1167</string>
 									<string key="NSClassName">NSView</string>
 								</object>
 							</array>
-							<string key="NSFrameSize">{480, 360}</string>
+							<string key="NSFrameSize">{705, 372}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<string key="NSReuseIdentifierKey">_NS:1163</string>
@@ -1335,10 +1335,9 @@
 							<int key="NSDividerStyle">2</int>
 						</object>
 					</array>
-					<string key="NSFrameSize">{480, 360}</string>
+					<string key="NSFrameSize">{705, 372}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
-					<reference key="NSNextKeyView"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
@@ -2038,7 +2037,7 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">splitView</string>
 						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="381102110"/>
+						<reference key="destination" ref="138760172"/>
 					</object>
 					<int key="connectionID">594</int>
 				</object>
@@ -2567,7 +2566,7 @@
 						<int key="objectID">372</int>
 						<reference key="object" ref="439893737"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="381102110"/>
+							<reference ref="138760172"/>
 						</array>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -3046,22 +3045,22 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">590</int>
-						<reference key="object" ref="381102110"/>
+						<reference key="object" ref="138760172"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="890259818"/>
-							<reference ref="532374065"/>
+							<reference ref="555315655"/>
+							<reference ref="494946535"/>
 						</array>
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">591</int>
-						<reference key="object" ref="890259818"/>
-						<reference key="parent" ref="381102110"/>
+						<reference key="object" ref="555315655"/>
+						<reference key="parent" ref="138760172"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">592</int>
-						<reference key="object" ref="532374065"/>
-						<reference key="parent" ref="381102110"/>
+						<reference key="object" ref="494946535"/>
+						<reference key="parent" ref="138760172"/>
 					</object>
 				</array>
 			</object>
@@ -3247,23 +3246,13 @@
 						</object>
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="listController">GOListController</string>
 						<string key="splitView">NSSplitView</string>
-						<string key="taskController">GOTaskController</string>
 						<string key="window">NSWindow</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="listController">
-							<string key="name">listController</string>
-							<string key="candidateClassName">GOListController</string>
-						</object>
 						<object class="IBToOneOutletInfo" key="splitView">
 							<string key="name">splitView</string>
 							<string key="candidateClassName">NSSplitView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="taskController">
-							<string key="name">taskController</string>
-							<string key="candidateClassName">GOTaskController</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="window">
 							<string key="name">window</string>
@@ -3273,22 +3262,6 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/GOAppDelegate.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">GOListController</string>
-					<string key="superclassName">NSViewController</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/GOListController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">GOTaskController</string>
-					<string key="superclassName">NSViewController</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/GOTaskController.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

@@ -10,9 +10,4 @@
 
 @implementation GOListController
 
-+ (id)controller{
-    GOListController *controller = [[self alloc] initWithNibName:@"GOListController" bundle:nil];
-    return controller;
-}
-
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "GOListViewController.h"
 
-@interface GOListController : NSViewController
-+ (id)controller;
+@interface GOListController : GOListViewController<NSTableViewDelegate>
 @end

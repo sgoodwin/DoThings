@@ -7,11 +7,8 @@
 //
 
 #import "GOTaskController.h"
+#import "GOCoreDataVendor.h"
 
 @implementation GOTaskController
-
-+ (id)controller{
-    return [[self alloc] initWithNibName:@"GOTaskController" bundle:nil];
-}
 
 @end

@@ -1,5 +1,5 @@
 //
-//  GOTaskController.h
+//  GOListViewController.h
 //  DoThings
 //
 //  Created by Samuel Goodwin on 12/17/11.
@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "GOListViewController.h"
 
-@interface GOTaskController : GOListViewController
+@interface GOListViewController : NSViewController
+@property (strong) NSManagedObjectContext *context;
++ (id)controller;
 @end

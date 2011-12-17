@@ -10,6 +10,8 @@
 #import "GOCoreDataVendor.h"
 #import "GOListController.h"
 #import "GOTaskController.h"
+#import "GOList.h"
+#import "NSManagedObjectContext+GOContextAdditions.h"
 
 @implementation GOAppDelegate
 
@@ -19,6 +21,9 @@
 @synthesize splitView = __splitView;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification{
+    NSManagedObjectContext *context = [[GOCoreDataVendor sharedVendor] mainthreadContext];
+    [GOList ensureBacklogExistsInContext:context];
+    
     self.listController = [GOListController controller];
     [self.listController.view setAutoresizingMask:NSViewWidthSizable|NSViewHeightSizable];
     NSView *leftView = [[self.splitView subviews] objectAtIndex:0];

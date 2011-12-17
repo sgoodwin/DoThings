@@ -1,5 +1,6 @@
 #import "_GOList.h"
 
 @interface GOList : _GOList {}
-// Custom logic goes here.
++ (void)ensureBacklogExistsInContext:(NSManagedObjectContext*)moc_;
++ (NSArray *)listsInContext:(NSManagedObjectContext*)moc_;
 @end
