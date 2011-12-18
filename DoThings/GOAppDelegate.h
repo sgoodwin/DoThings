@@ -8,13 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class GOListController;
+@class GOTaskController;
 @interface GOAppDelegate : NSObject <NSApplicationDelegate>
-
+@property (nonatomic, strong) NSManagedObjectContext *context;
 @property (assign) IBOutlet NSWindow *window;
-
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (assign) IBOutlet NSSplitView *splitView;
 
 - (IBAction)saveAction:(id)sender;
 
