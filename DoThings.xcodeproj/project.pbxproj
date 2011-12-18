@@ -18,6 +18,12 @@
 		9BB282B6149C5D2000948BBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB28293149C5D2000948BBB /* Cocoa.framework */; };
 		9BB282BE149C5D2000948BBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BB282BC149C5D2000948BBB /* InfoPlist.strings */; };
 		9BB282C1149C5D2000948BBB /* DoThingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB282C0149C5D2000948BBB /* DoThingsTests.m */; };
+		9BBEF4E4149C6B4500471749 /* _GOList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4DC149C6B4500471749 /* _GOList.m */; };
+		9BBEF4E5149C6B4500471749 /* _GOTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4DD149C6B4500471749 /* _GOTask.m */; };
+		9BBEF4E6149C6B4500471749 /* GOList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4DE149C6B4500471749 /* GOList.m */; };
+		9BBEF4E7149C6B4500471749 /* GOTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4DF149C6B4500471749 /* GOTask.m */; };
+		9BBEF4EE149C6D9F00471749 /* GOCoreDataVendor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4ED149C6D9F00471749 /* GOCoreDataVendor.m */; };
+		9BBEF4FD149C81AD00471749 /* NSManagedObjectContext+GOContextAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4FC149C81AD00471749 /* NSManagedObjectContext+GOContextAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,18 @@
 		9BB282BD149C5D2000948BBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BB282BF149C5D2000948BBB /* DoThingsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoThingsTests.h; sourceTree = "<group>"; };
 		9BB282C0149C5D2000948BBB /* DoThingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoThingsTests.m; sourceTree = "<group>"; };
+		9BBEF4DC149C6B4500471749 /* _GOList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _GOList.m; sourceTree = "<group>"; };
+		9BBEF4DD149C6B4500471749 /* _GOTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _GOTask.m; sourceTree = "<group>"; };
+		9BBEF4DE149C6B4500471749 /* GOList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOList.m; sourceTree = "<group>"; };
+		9BBEF4DF149C6B4500471749 /* GOTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOTask.m; sourceTree = "<group>"; };
+		9BBEF4E0149C6B4500471749 /* _GOList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GOList.h; sourceTree = "<group>"; };
+		9BBEF4E1149C6B4500471749 /* _GOTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GOTask.h; sourceTree = "<group>"; };
+		9BBEF4E2149C6B4500471749 /* GOList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOList.h; sourceTree = "<group>"; };
+		9BBEF4E3149C6B4500471749 /* GOTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOTask.h; sourceTree = "<group>"; };
+		9BBEF4EC149C6D9F00471749 /* GOCoreDataVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOCoreDataVendor.h; sourceTree = "<group>"; };
+		9BBEF4ED149C6D9F00471749 /* GOCoreDataVendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOCoreDataVendor.m; sourceTree = "<group>"; };
+		9BBEF4FB149C81AD00471749 /* NSManagedObjectContext+GOContextAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+GOContextAdditions.h"; sourceTree = "<group>"; };
+		9BBEF4FC149C81AD00471749 /* NSManagedObjectContext+GOContextAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+GOContextAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +134,11 @@
 		9BB28299149C5D2000948BBB /* DoThings */ = {
 			isa = PBXGroup;
 			children = (
+				9BBEF4EB149C6D7D00471749 /* CoreData */,
+				9BBEF4EA149C6B5800471749 /* Data Models */,
 				9BB282A5149C5D2000948BBB /* GOAppDelegate.h */,
 				9BB282A6149C5D2000948BBB /* GOAppDelegate.m */,
 				9BB282A8149C5D2000948BBB /* MainMenu.xib */,
-				9BB282AB149C5D2000948BBB /* DoThings.xcdatamodeld */,
 				9BB2829A149C5D2000948BBB /* Supporting Files */,
 			);
 			path = DoThings;
@@ -154,6 +173,33 @@
 				9BB282BC149C5D2000948BBB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BBEF4EA149C6B5800471749 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				9BB282AB149C5D2000948BBB /* DoThings.xcdatamodeld */,
+				9BBEF4E0149C6B4500471749 /* _GOList.h */,
+				9BBEF4DC149C6B4500471749 /* _GOList.m */,
+				9BBEF4E1149C6B4500471749 /* _GOTask.h */,
+				9BBEF4DD149C6B4500471749 /* _GOTask.m */,
+				9BBEF4E2149C6B4500471749 /* GOList.h */,
+				9BBEF4DE149C6B4500471749 /* GOList.m */,
+				9BBEF4E3149C6B4500471749 /* GOTask.h */,
+				9BBEF4DF149C6B4500471749 /* GOTask.m */,
+			);
+			name = "Data Models";
+			sourceTree = "<group>";
+		};
+		9BBEF4EB149C6D7D00471749 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9BBEF4EC149C6D9F00471749 /* GOCoreDataVendor.h */,
+				9BBEF4ED149C6D9F00471749 /* GOCoreDataVendor.m */,
+				9BBEF4FB149C81AD00471749 /* NSManagedObjectContext+GOContextAdditions.h */,
+				9BBEF4FC149C81AD00471749 /* NSManagedObjectContext+GOContextAdditions.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +313,12 @@
 				9BB282A0149C5D2000948BBB /* main.m in Sources */,
 				9BB282A7149C5D2000948BBB /* GOAppDelegate.m in Sources */,
 				9BB282AD149C5D2000948BBB /* DoThings.xcdatamodeld in Sources */,
+				9BBEF4E4149C6B4500471749 /* _GOList.m in Sources */,
+				9BBEF4E5149C6B4500471749 /* _GOTask.m in Sources */,
+				9BBEF4E6149C6B4500471749 /* GOList.m in Sources */,
+				9BBEF4E7149C6B4500471749 /* GOTask.m in Sources */,
+				9BBEF4EE149C6D9F00471749 /* GOCoreDataVendor.m in Sources */,
+				9BBEF4FD149C81AD00471749 /* NSManagedObjectContext+GOContextAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
