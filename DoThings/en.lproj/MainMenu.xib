@@ -1601,7 +1601,7 @@
 													<string key="NSFrame">{{1, 119}, {223, 15}}</string>
 													<reference key="NSSuperview" ref="846431253"/>
 													<reference key="NSWindow"/>
-													<reference key="NSNextKeyView" ref="127117705"/>
+													<reference key="NSNextKeyView" ref="849633811"/>
 													<string key="NSReuseIdentifierKey">_NS:1847</string>
 													<int key="NSsFlags">1</int>
 													<reference key="NSTarget" ref="846431253"/>
@@ -1637,7 +1637,7 @@
 							<bool key="NSIsVertical">YES</bool>
 							<int key="NSDividerStyle">2</int>
 						</object>
-						<object class="NSButton" id="127117705">
+						<object class="NSButton" id="849633811">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">292</int>
 							<string key="NSFrame">{{681, -1}, {24, 23}}</string>
@@ -1646,13 +1646,13 @@
 							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:2466</string>
 							<bool key="NSEnabled">YES</bool>
-							<object class="NSButtonCell" key="NSCell" id="229230689">
+							<object class="NSButtonCell" key="NSCell" id="186488828">
 								<int key="NSCellFlags">-2080244224</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents">+</string>
 								<reference key="NSSupport" ref="909672455"/>
 								<string key="NSCellIdentifier">_NS:2466</string>
-								<reference key="NSControlView" ref="127117705"/>
+								<reference key="NSControlView" ref="849633811"/>
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">162</int>
 								<string key="NSAlternateContents"/>
@@ -2398,28 +2398,44 @@
 					<int key="connectionID">594</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">add:</string>
+						<reference key="source" ref="357312409"/>
+						<reference key="destination" ref="849633811"/>
+					</object>
+					<int key="connectionID">627</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">contentSet: selection.tasks</string>
+						<string key="label">contentSet: selection.self.tasks</string>
 						<reference key="source" ref="357312409"/>
 						<reference key="destination" ref="90415833"/>
 						<object class="NSNibBindingConnector" key="connector">
 							<reference key="NSSource" ref="357312409"/>
 							<reference key="NSDestination" ref="90415833"/>
-							<string key="NSLabel">contentSet: selection.tasks</string>
+							<string key="NSLabel">contentSet: selection.self.tasks</string>
 							<string key="NSBinding">contentSet</string>
-							<string key="NSKeyPath">selection.tasks</string>
+							<string key="NSKeyPath">selection.self.tasks</string>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">626</int>
+					<int key="connectionID">629</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">add:</string>
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">managedObjectContext: context</string>
 						<reference key="source" ref="357312409"/>
-						<reference key="destination" ref="127117705"/>
+						<reference key="destination" ref="976324537"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="357312409"/>
+							<reference key="NSDestination" ref="976324537"/>
+							<string key="NSLabel">managedObjectContext: context</string>
+							<string key="NSBinding">managedObjectContext</string>
+							<string key="NSKeyPath">context</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
 					</object>
-					<int key="connectionID">627</int>
+					<int key="connectionID">630</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -2999,7 +3015,7 @@
 						<reference key="object" ref="439893737"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="138760172"/>
-							<reference ref="127117705"/>
+							<reference ref="849633811"/>
 						</array>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -3597,16 +3613,16 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">620</int>
-						<reference key="object" ref="127117705"/>
+						<reference key="object" ref="849633811"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="229230689"/>
+							<reference ref="186488828"/>
 						</array>
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">621</int>
-						<reference key="object" ref="229230689"/>
-						<reference key="parent" ref="127117705"/>
+						<reference key="object" ref="186488828"/>
+						<reference key="parent" ref="849633811"/>
 					</object>
 				</array>
 			</object>
@@ -3789,7 +3805,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">628</int>
+			<int key="maxID">630</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

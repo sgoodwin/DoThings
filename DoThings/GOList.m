@@ -26,7 +26,7 @@ NSString *const kBacklogTitle = @"Reservoir";
          [list addTasksObject:task];
          [moc_ save];
          
-         NSLog(@"List of tasks in list %@ is: %@", list, [list tasks]);
+         NSLog(@"List of tasks in list %@ is: %lu", [list title], [[list tasks] count]);
      }
 }
 

@@ -10,6 +10,6 @@
     </entity>
     <elements>
         <element name="List" positionX="160" positionY="192" width="128" height="75"/>
-        <element name="Task" positionX="-90" positionY="141" width="128" height="75"/>
+        <element name="Task" positionX="-135" positionY="180" width="128" height="75"/>
     </elements>
 </model>
