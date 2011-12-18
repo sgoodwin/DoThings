@@ -8,33 +8,17 @@
 
 #import "GOAppDelegate.h"
 #import "GOCoreDataVendor.h"
-#import "GOListController.h"
-#import "GOTaskController.h"
 #import "GOList.h"
 #import "NSManagedObjectContext+GOContextAdditions.h"
 
 @implementation GOAppDelegate
 
 @synthesize window = __window;
-@synthesize listController = __listController;
-@synthesize taskController = __taskController;
+@synthesize context = __context;
 @synthesize splitView = __splitView;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification{
-    NSManagedObjectContext *context = [[GOCoreDataVendor sharedVendor] mainthreadContext];
-    [GOList ensureBacklogExistsInContext:context];
-    
-    self.listController = [GOListController controller];
-    [self.listController.view setAutoresizingMask:NSViewWidthSizable|NSViewHeightSizable];
-    NSView *leftView = [[self.splitView subviews] objectAtIndex:0];
-    [self.listController.view setFrame:leftView.bounds];
-    [leftView addSubview:self.listController.view];
-    
-    self.taskController = [GOTaskController controller];
-    [self.taskController.view setAutoresizingMask:NSViewWidthSizable|NSViewHeightSizable];
-    NSView *rightView = [[self.splitView subviews] objectAtIndex:1];
-    [self.taskController.view setFrame:rightView.bounds];
-    [rightView addSubview:self.taskController.view];
+
 }
 
 /**
@@ -105,6 +89,16 @@
     }
 
     return NSTerminateNow;
+}
+
+- (NSManagedObjectContext*)context{
+    if(__context){
+        return __context;
+    }
+    
+    __context = [[GOCoreDataVendor sharedVendor] mainthreadContext];
+    [GOList ensureBacklogExistsInContext:__context];
+    return __context;
 }
 
 @end

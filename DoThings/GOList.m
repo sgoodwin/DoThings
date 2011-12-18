@@ -1,4 +1,5 @@
 #import "GOList.h"
+#import "GOTask.h"
 #import "NSManagedObjectContext+GOContextAdditions.h"
 
 NSString *const kBacklogTitle = @"Reservoir";
@@ -11,7 +12,7 @@ NSString *const kBacklogTitle = @"Reservoir";
     [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"title = %@", kBacklogTitle]];
     
     NSError *error = nil;
-    NSArray *items = [moc_ executeFetchRequest:fetchRequest error:&error];
+    NSArray *items = [moc_ executeFetchRequest:fetchRequest error:&error];    
      if([items count] > 1){
          NSAssert(NO, @"YOU HAVE MORE THAN ONE BACKLOG?");
      }
@@ -19,7 +20,13 @@ NSString *const kBacklogTitle = @"Reservoir";
      if([items count] == 0){
          GOList *list = [self insertInManagedObjectContext:moc_];
          [list setTitle:kBacklogTitle];
+         
+         GOTask *task = [GOTask insertInManagedObjectContext:moc_];
+         [task setText:@"start here!"];
+         [list addTasksObject:task];
          [moc_ save];
+         
+         NSLog(@"List of tasks in list %@ is: %@", list, [list tasks]);
      }
 }
 

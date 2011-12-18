@@ -11,8 +11,7 @@
 @class GOListController;
 @class GOTaskController;
 @interface GOAppDelegate : NSObject <NSApplicationDelegate>
-@property (strong) GOListController *listController;
-@property (strong) GOTaskController *taskController;
+@property (nonatomic, strong) NSManagedObjectContext *context;
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSSplitView *splitView;
 

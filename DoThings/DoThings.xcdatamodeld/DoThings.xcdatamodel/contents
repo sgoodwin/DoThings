@@ -2,14 +2,14 @@
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="11C74" minimumToolsVersion="Xcode 4.2" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="List" representedClassName="GOList" syncable="YES">
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Task" inverseName="list" inverseEntity="Task" syncable="YES"/>
+        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Task" inverseName="list" inverseEntity="Task" syncable="YES"/>
     </entity>
     <entity name="Task" representedClassName="GOTask" syncable="YES">
         <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="list" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="List" inverseName="tasks" inverseEntity="List" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Task" positionX="160" positionY="192" width="128" height="75"/>
         <element name="List" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Task" positionX="-90" positionY="141" width="128" height="75"/>
     </elements>
 </model>

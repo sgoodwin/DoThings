@@ -57,10 +57,10 @@ const struct GOListFetchedProperties GOListFetchedProperties = {
 @dynamic tasks;
 
 	
-- (NSMutableOrderedSet*)tasksSet {
+- (NSMutableSet*)tasksSet {
 	[self willAccessValueForKey:@"tasks"];
   
-	NSMutableOrderedSet *result = (NSMutableOrderedSet*)[self mutableOrderedSetValueForKey:@"tasks"];
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"tasks"];
   
 	[self didAccessValueForKey:@"tasks"];
 	return result;

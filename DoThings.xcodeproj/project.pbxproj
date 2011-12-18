@@ -23,12 +23,7 @@
 		9BBEF4E6149C6B4500471749 /* GOList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4DE149C6B4500471749 /* GOList.m */; };
 		9BBEF4E7149C6B4500471749 /* GOTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4DF149C6B4500471749 /* GOTask.m */; };
 		9BBEF4EE149C6D9F00471749 /* GOCoreDataVendor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4ED149C6D9F00471749 /* GOCoreDataVendor.m */; };
-		9BBEF4F2149C771A00471749 /* GOListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4F0149C771A00471749 /* GOListController.m */; };
-		9BBEF4F3149C771A00471749 /* GOListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBEF4F1149C771A00471749 /* GOListController.xib */; };
-		9BBEF4F9149C7A2E00471749 /* GOTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4F7149C7A2E00471749 /* GOTaskController.m */; };
-		9BBEF4FA149C7A2E00471749 /* GOTaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBEF4F8149C7A2E00471749 /* GOTaskController.xib */; };
 		9BBEF4FD149C81AD00471749 /* NSManagedObjectContext+GOContextAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4FC149C81AD00471749 /* NSManagedObjectContext+GOContextAdditions.m */; };
-		9BBEF501149C827F00471749 /* GOListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBEF4FF149C827E00471749 /* GOListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,16 +67,8 @@
 		9BBEF4E3149C6B4500471749 /* GOTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOTask.h; sourceTree = "<group>"; };
 		9BBEF4EC149C6D9F00471749 /* GOCoreDataVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOCoreDataVendor.h; sourceTree = "<group>"; };
 		9BBEF4ED149C6D9F00471749 /* GOCoreDataVendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOCoreDataVendor.m; sourceTree = "<group>"; };
-		9BBEF4EF149C771A00471749 /* GOListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOListController.h; sourceTree = "<group>"; };
-		9BBEF4F0149C771A00471749 /* GOListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOListController.m; sourceTree = "<group>"; };
-		9BBEF4F1149C771A00471749 /* GOListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GOListController.xib; sourceTree = "<group>"; };
-		9BBEF4F6149C7A2E00471749 /* GOTaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOTaskController.h; sourceTree = "<group>"; };
-		9BBEF4F7149C7A2E00471749 /* GOTaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOTaskController.m; sourceTree = "<group>"; };
-		9BBEF4F8149C7A2E00471749 /* GOTaskController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GOTaskController.xib; sourceTree = "<group>"; };
 		9BBEF4FB149C81AD00471749 /* NSManagedObjectContext+GOContextAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+GOContextAdditions.h"; sourceTree = "<group>"; };
 		9BBEF4FC149C81AD00471749 /* NSManagedObjectContext+GOContextAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+GOContextAdditions.m"; sourceTree = "<group>"; };
-		9BBEF4FE149C827E00471749 /* GOListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOListViewController.h; sourceTree = "<group>"; };
-		9BBEF4FF149C827E00471749 /* GOListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,17 +134,12 @@
 		9BB28299149C5D2000948BBB /* DoThings */ = {
 			isa = PBXGroup;
 			children = (
-				9BBEF4F5149C7A1700471749 /* Task Table */,
-				9BBEF4F4149C797D00471749 /* List Table */,
 				9BBEF4EB149C6D7D00471749 /* CoreData */,
 				9BBEF4EA149C6B5800471749 /* Data Models */,
 				9BB282A5149C5D2000948BBB /* GOAppDelegate.h */,
 				9BB282A6149C5D2000948BBB /* GOAppDelegate.m */,
 				9BB282A8149C5D2000948BBB /* MainMenu.xib */,
-				9BB282AB149C5D2000948BBB /* DoThings.xcdatamodeld */,
 				9BB2829A149C5D2000948BBB /* Supporting Files */,
-				9BBEF4FE149C827E00471749 /* GOListViewController.h */,
-				9BBEF4FF149C827E00471749 /* GOListViewController.m */,
 			);
 			path = DoThings;
 			sourceTree = "<group>";
@@ -196,6 +178,7 @@
 		9BBEF4EA149C6B5800471749 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				9BB282AB149C5D2000948BBB /* DoThings.xcdatamodeld */,
 				9BBEF4E0149C6B4500471749 /* _GOList.h */,
 				9BBEF4DC149C6B4500471749 /* _GOList.m */,
 				9BBEF4E1149C6B4500471749 /* _GOTask.h */,
@@ -217,26 +200,6 @@
 				9BBEF4FC149C81AD00471749 /* NSManagedObjectContext+GOContextAdditions.m */,
 			);
 			name = CoreData;
-			sourceTree = "<group>";
-		};
-		9BBEF4F4149C797D00471749 /* List Table */ = {
-			isa = PBXGroup;
-			children = (
-				9BBEF4EF149C771A00471749 /* GOListController.h */,
-				9BBEF4F0149C771A00471749 /* GOListController.m */,
-				9BBEF4F1149C771A00471749 /* GOListController.xib */,
-			);
-			name = "List Table";
-			sourceTree = "<group>";
-		};
-		9BBEF4F5149C7A1700471749 /* Task Table */ = {
-			isa = PBXGroup;
-			children = (
-				9BBEF4F6149C7A2E00471749 /* GOTaskController.h */,
-				9BBEF4F7149C7A2E00471749 /* GOTaskController.m */,
-				9BBEF4F8149C7A2E00471749 /* GOTaskController.xib */,
-			);
-			name = "Task Table";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,8 +276,6 @@
 				9BB2829E149C5D2000948BBB /* InfoPlist.strings in Resources */,
 				9BB282A4149C5D2000948BBB /* Credits.rtf in Resources */,
 				9BB282AA149C5D2000948BBB /* MainMenu.xib in Resources */,
-				9BBEF4F3149C771A00471749 /* GOListController.xib in Resources */,
-				9BBEF4FA149C7A2E00471749 /* GOTaskController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,10 +318,7 @@
 				9BBEF4E6149C6B4500471749 /* GOList.m in Sources */,
 				9BBEF4E7149C6B4500471749 /* GOTask.m in Sources */,
 				9BBEF4EE149C6D9F00471749 /* GOCoreDataVendor.m in Sources */,
-				9BBEF4F2149C771A00471749 /* GOListController.m in Sources */,
-				9BBEF4F9149C7A2E00471749 /* GOTaskController.m in Sources */,
 				9BBEF4FD149C81AD00471749 /* NSManagedObjectContext+GOContextAdditions.m in Sources */,
-				9BBEF501149C827F00471749 /* GOListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

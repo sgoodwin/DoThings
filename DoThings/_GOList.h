@@ -40,9 +40,9 @@ extern const struct GOListFetchedProperties {
 
 
 
-@property (nonatomic, strong) NSOrderedSet* tasks;
+@property (nonatomic, strong) NSSet* tasks;
 
-- (NSMutableOrderedSet*)tasksSet;
+- (NSMutableSet*)tasksSet;
 
 
 
@@ -51,8 +51,8 @@ extern const struct GOListFetchedProperties {
 
 @interface _GOList (CoreDataGeneratedAccessors)
 
-- (void)addTasks:(NSOrderedSet*)value_;
-- (void)removeTasks:(NSOrderedSet*)value_;
+- (void)addTasks:(NSSet*)value_;
+- (void)removeTasks:(NSSet*)value_;
 - (void)addTasksObject:(GOTask*)value_;
 - (void)removeTasksObject:(GOTask*)value_;
 
@@ -68,8 +68,8 @@ extern const struct GOListFetchedProperties {
 
 
 
-- (NSMutableOrderedSet*)primitiveTasks;
-- (void)setPrimitiveTasks:(NSMutableOrderedSet*)value;
+- (NSMutableSet*)primitiveTasks;
+- (void)setPrimitiveTasks:(NSMutableSet*)value;
 
 
 @end
